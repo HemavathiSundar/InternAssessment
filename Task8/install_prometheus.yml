@@ -1,0 +1,8 @@
+#Create an Ansible playbook to install Prometheus on the local system.
+---
+- name: Install Prometheus on the local system
+  hosts: localhost
+  become: yes
+
+  roles:
+    - cloudalchemy.prometheus
